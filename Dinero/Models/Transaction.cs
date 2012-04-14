@@ -8,13 +8,15 @@ namespace Dinero.Models
     class Transaction
     {
         #region Constructors
-        public Transaction(decimal amount)
+        public Transaction(Company company, decimal amount)
         {
+            Company = company;
             Amount = amount;
         }
         #endregion
 
         #region Properties
+        public Company Company { get; private set; }
         public decimal Amount { get; private set; }
         #endregion
     }

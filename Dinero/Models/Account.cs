@@ -34,9 +34,9 @@ namespace Dinero.Models
             {
                 return new List<Transaction>()
                 {
-                    new Transaction(-100),
-                    new Transaction(200),
-                    new Transaction(-300)
+                    new Transaction(new Company("Starbucks"), -2.10m),
+                    new Transaction(new Company("Parents"), 150m),
+                    new Transaction(new Company("Sainsburys"), -38.20m)
                 };
             }
         }
