@@ -28,6 +28,18 @@ namespace Dinero.Models
 
         #region Properties
         public string Name { get; private set; }
+        public List<Transaction> Transactions
+        {
+            get 
+            {
+                return new List<Transaction>()
+                {
+                    new Transaction(-100),
+                    new Transaction(200),
+                    new Transaction(-300)
+                };
+            }
+        }
         #endregion
     }
 }
