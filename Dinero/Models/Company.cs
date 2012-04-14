@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Dinero.DB;
 
 namespace Dinero.Models
 {
-    class Company
+    public class Company : DatabaseTable
     {
         #region Constructor
-        public Company(string name)
+        public Company(long id, string name) : base(id)
         {
             Name = name;
         }

@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Dinero.DB;
 
 namespace Dinero.Models
 {
-    class Transaction
+    public class Transaction : DatabaseTable
     {
         #region Constructors
-        public Transaction(Company company, decimal amount)
+        public Transaction(long id, Company company, decimal amount) : base(id)  
         {
             Company = company;
             Amount = amount;
