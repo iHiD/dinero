@@ -15,13 +15,18 @@ using System.Windows.Shapes;
 namespace Dinero
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LandingPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LandingPage : Window
     {
-        public MainWindow()
+        public LandingPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
