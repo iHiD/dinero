@@ -1,16 +1,30 @@
 ﻿<Window x:Class="Dinero.LandingPage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Dinero" Height="245" Width="500" ResizeMode="CanMinimize">
-    <Grid>
-        <StackPanel>
-            <Button Height="40" Width="400" Margin="0 25" Content="Add New Transactions" Click="Button_Click" />
-            <Button Height="40" Width="400" Content="View Accounts" Click="Button_Click" />
-            <Label Margin="0 25 40 0" HorizontalAlignment="Right" Foreground="CornflowerBlue" Cursor="Hand">
-                <Underline>
-                    Settings
-                </Underline>
-            </Label>
+        xmlns:Controls="clr-namespace:Dinero.Controls;assembly=Controls"
+        Title="Dinero" ResizeMode="CanResize" WindowState="Maximized" WindowStyle="ThreeDBorderWindow">
+    <Grid VerticalAlignment="Stretch">
+        <StackPanel VerticalAlignment="Stretch">
+            <Menu Height="23" Name="menu1">
+                <MenuItem Header="Data">
+                    <MenuItem Header="Import..." />
+                </MenuItem>
+            </Menu>
+            <WrapPanel VerticalAlignment="Stretch">
+                <Grid>
+                    <StackPanel Name="stkTransactions">
+                        <Controls:Transaction />
+                        <Controls:Transaction/>
+                        <Controls:Transaction/>
+                        <Controls:Transaction/>
+                    </StackPanel>
+                </Grid>
+                <Grid Width="400" VerticalAlignment="Stretch">
+                    <StackPanel Name="stkProperties" HorizontalAlignment="Stretch" Background="AliceBlue">
+                        <Label>Click a transaction to see its properties</Label>
+                    </StackPanel>
+                </Grid>
+            </WrapPanel>
         </StackPanel>
     </Grid>
 </Window>

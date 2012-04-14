@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Dinero.Controls.Transaction"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="40" d:DesignWidth="1000">
+    <Grid>
+        <WrapPanel>
+            <Grid Name="grdDate" Background="Beige" Height="40" Width="100" ShowGridLines="True">
+                <TextBlock x:Name="TransactionDate" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Grid>
+            <Grid Name="grdCompany" Background="BlanchedAlmond" Height="40" Width="700">
+                <TextBlock x:Name="TransactionCompany" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Grid>
+            <Grid Name="grdCredit" Background="Ivory" Height="40" Width="100">
+                <TextBlock x:Name="TransactionCredit" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Grid>
+            <Grid Name="grdDebit" Background="LightGray" Height="40" Width="100">
+                <TextBlock x:Name="TransactionDebit" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Grid>
+        </WrapPanel>
+    </Grid>
+</UserControl>

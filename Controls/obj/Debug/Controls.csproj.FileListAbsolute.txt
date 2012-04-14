@@ -1,0 +1,9 @@
+C:\Users\Serenthia\Documents\Work\Dinero\Controls\bin\Debug\Controls.dll
+C:\Users\Serenthia\Documents\Work\Dinero\Controls\bin\Debug\Controls.pdb
+C:\Users\Serenthia\Documents\Work\Dinero\Controls\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Serenthia\Documents\Work\Dinero\Controls\obj\Debug\Controls\Transaction.baml
+C:\Users\Serenthia\Documents\Work\Dinero\Controls\obj\Debug\Controls\Transaction.g.cs
+C:\Users\Serenthia\Documents\Work\Dinero\Controls\obj\Debug\Controls_MarkupCompile.cache
+C:\Users\Serenthia\Documents\Work\Dinero\Controls\obj\Debug\Controls.g.resources
+C:\Users\Serenthia\Documents\Work\Dinero\Controls\obj\Debug\Controls.dll
+C:\Users\Serenthia\Documents\Work\Dinero\Controls\obj\Debug\Controls.pdb
